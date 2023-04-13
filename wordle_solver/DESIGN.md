@@ -25,6 +25,7 @@ of the vocabulary list. The second loop loops from the first letter of the word 
 the second loop checks if the letter is the same as the given letter. If they are the same, increment the score of the
 letter once. 
 
+```
 score_letter(letter, vocabulary, num words){
     score;
     for(words in vocabulary list){
@@ -39,6 +40,7 @@ score_letter(letter, vocabulary, num words){
     }
     return score;
 }
+```
 
 The score word function creates a score variable to keep track of the score of a certain word. Create an empty array to
 keep track of the words that the function has visited already. Always add the first letter score to the score counter
@@ -49,6 +51,7 @@ not add to the count.  After the nested loop,
 add the letter to the letter array. An if statement after the letter would consider if the count is zero or not. If
 zero, add score of the letter of the score, if not zero, add zero to the score. Return the score after.
 
+```
 score_word(word, letter_scores array){
     score;
     my letter array;
@@ -72,10 +75,12 @@ score_word(word, letter_scores array){
     }
     return score;
 }
+```
 
 Filter vocabulary gray loops through the words of the vocabulary and the letters of the word to check it contains the
 gray letter. If it does, free the letter and set the slot to NULL. Return the amount of words removed. 
 
+```
 filter_vocabulary_gray(letter, vocabulary, num_words){
     size_t removed;
     for(words in vocabulary list){
@@ -89,11 +94,13 @@ filter_vocabulary_gray(letter, vocabulary, num_words){
     }
     return removed;
 }
+```
 
 Filter vocabulary yellow loops through the words of the vocabulary and the letters of the words to free the words that doesn't contain the
 yellow letter and free the words that have the specified yellow letter in that specific position. Return the
 number of words removed.
 
+```
 filter_vocabulary_yellow(letter, position, vocabulary, num_words){
     size_t removed;
     for(words in vocabulary list){
@@ -112,10 +119,12 @@ filter_vocabulary_yellow(letter, position, vocabulary, num_words){
     }
     return removed;
 }
+```
 
 Filter vocabulary green loops through the words of the vocabulary and the letters of the words to free the words that
 doesn't contain the green letter and free words that doesn't have the letter at that specific position. 
 
+```
 filter_vocabulary_green(letter, position, vocabulary, num_words){
     size_t removed;
     for(words in the vocabulary list){
@@ -134,3 +143,4 @@ filter_vocabulary_green(letter, position, vocabulary, num_words){
     }
     return removed;
 }
+```
