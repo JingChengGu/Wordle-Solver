@@ -1,7 +1,7 @@
 ## Wordle Solver
 
 ### Program Description
-- As I have previously created a simulation of the famous Wordle game, I decided to craete a program that helps to solve the game at ease. The program is craeted through C language and ran through Ubuntu.
+- As I have previously created a simulation of the famous Wordle game, I decided to create a program that helps to solve the game with ease. The program is created in C language and runs through Ubuntu.
 
 ### How to Use / Logistics
 - First the program asks the user to input the word "irate" as it is a common starting word that serves to be very effective. It also asks the user to input either the three letters: g, y, x at each of the five positions of the word (g: green, the letter is in the right position. y: yellow, the letter is in the word but not in the right position. x: grey, the letter is not in the word).
